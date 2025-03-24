@@ -1,0 +1,14 @@
+[2025-03-23 22:51:34] This is codeql database analyze test-db --format=lgtm --output=./result.csv demo.ql
+[2025-03-23 22:51:34] Log file was started late.
+[2025-03-23 22:51:34] [PROGRESS] database analyze> Running queries.
+[2025-03-23 22:51:34] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --qlconfig-file=/Users/chenchengmao/query/qlconfig.yml --no-rerun --interpret-passthrough=null,--format=lgtm,-o=/Users/chenchengmao/query/result.csv,--max-paths=4,--csv-location-format=line-column,--print-diagnostics-summary,--print-metrics-summary,--qlconfig-file=/Users/chenchengmao/query/qlconfig.yml,--,/Users/chenchengmao/query/test-db,demo.ql -- /Users/chenchengmao/query/test-db demo.ql
+[2025-03-23 22:51:34] Calling plumbing command: codeql resolve ram --dataset=/Users/chenchengmao/query/test-db/db-cpp --format=json
+[2025-03-23 22:51:34] [PROGRESS] resolve ram> Stringpool size measured as 2523546
+[2025-03-23 22:51:34] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1800M",
+                        "--off-heap-ram=1583"
+                      ]
+[2025-03-23 22:51:34] Chaining via /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/codeql.XXXXXXXX.ryd7zGauuZ to plumbing: execute queries -J-Xmx1800M --off-heap-ram=1583 --verbosity=progress --logdir=/Users/chenchengmao/query/test-db/log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --qlconfig-file=/Users/chenchengmao/query/qlconfig.yml --no-rerun --interpret-passthrough=null,--format=lgtm,-o=/Users/chenchengmao/query/result.csv,--max-paths=4,--csv-location-format=line-column,--print-diagnostics-summary,--print-metrics-summary,--qlconfig-file=/Users/chenchengmao/query/qlconfig.yml,--,/Users/chenchengmao/query/test-db,demo.ql --output=/Users/chenchengmao/query/test-db/results -- /Users/chenchengmao/query/test-db/db-cpp demo.ql
+[2025-03-23 22:51:34] Plumbing command codeql database run-queries completed with status 70.
+[2025-03-23 22:51:34] Exiting with code 70
